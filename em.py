@@ -110,14 +110,4 @@ def run(X: np.ndarray, mixture: GaussianMixture,
     return mixture, post, ll
 
 
-def fill_matrix(X: np.ndarray, mixture: GaussianMixture) -> np.ndarray:
-    """Fills an incomplete matrix according to a mixture model
 
-    Args:
-        X: (n, d) array of incomplete data (incomplete entries =0)
-        mixture: a mixture of gaussians
-
-    Returns
-        np.ndarray: a (n, d) array with completed data
-    """
-    raise NotImplementedError
